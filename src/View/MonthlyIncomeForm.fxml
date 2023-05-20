@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="520.0" prefWidth="790.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MonthlyIncomeFormController">
+   <children>
+      <Label layoutX="246.0" layoutY="25.0" prefHeight="38.0" prefWidth="297.0" text="Monthly Income Report">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblMonthly" layoutX="5.0" layoutY="73.0" prefHeight="345.0" prefWidth="779.0">
+         <columns>
+            <TableColumn fx:id="colMonth" prefWidth="170.0" text="Month" />
+            <TableColumn fx:id="colNumOfOrders" prefWidth="214.0" text="Num Of Orders" />
+            <TableColumn fx:id="colNumOfItemsSold" prefWidth="211.0" text="Num Of Items Sold" />
+            <TableColumn fx:id="colIncome" prefWidth="183.0" text="Income" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnBack" layoutX="670.0" layoutY="464.0" mnemonicParsing="false" onAction="#BackOnAction" prefHeight="42.0" prefWidth="106.0" style="-fx-background-color: #ff3838;" stylesheets="@../Use.css" text="Back" textFill="#f5f2f2">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="14.0" layoutY="418.0" prefHeight="27.0" prefWidth="106.0" text="Total Income">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotal" layoutX="678.0" layoutY="418.0" prefHeight="27.0" prefWidth="106.0" text="00.00">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Separator layoutX="5.0" layoutY="440.0" prefHeight="10.0" prefWidth="779.0" />
+      <Separator layoutX="613.0" layoutY="450.0" prefHeight="10.0" prefWidth="171.0" />
+   </children>
+</AnchorPane>

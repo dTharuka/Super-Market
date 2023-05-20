@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="354.0" prefWidth="611.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminItemsFormController">
+   <children>
+      <ImageView fitHeight="355.0" fitWidth="611.0" opacity="0.43" pickOnBounds="true">
+         <image>
+            <Image url="@assets/Godfrey-JE-Blog-Mrkt-P1.gif" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnNewItem" layoutX="4.0" layoutY="222.0" mnemonicParsing="false" onAction="#newItemOnAction" prefHeight="51.0" prefWidth="193.0" style="-fx-background-color: #00d4ff;" stylesheets="@../Use.css" text="Register New Item" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Button fx:id="btnModify" layoutX="209.0" layoutY="222.0" mnemonicParsing="false" onAction="#ModifyItemOnAction" prefHeight="51.0" prefWidth="193.0" style="-fx-background-color: #00d4ff;" stylesheets="@../Use.css" text="Modify Item Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRemoveItems" layoutX="414.0" layoutY="222.0" mnemonicParsing="false" onAction="#removeItemsOnAction" prefHeight="51.0" prefWidth="193.0" style="-fx-background-color: #00d4ff;" stylesheets="@../Use.css" text="Remove Items" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBack" layoutX="472.0" layoutY="304.0" mnemonicParsing="false" onAction="#BackOnAction" prefHeight="39.0" prefWidth="115.0" style="-fx-background-color: #ff3838;" stylesheets="@../Use.css" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="154.0" text="Manage Items">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Separator layoutX="154.0" layoutY="52.0" prefHeight="0.0" prefWidth="268.0" style="-fx-background-color: #171717;" />
+   </children>
+</AnchorPane>

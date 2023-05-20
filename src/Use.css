@@ -1,0 +1,7 @@
+{
+-fx-background-radius: 50;
+}
+.AnchorPane{
+    -fx-border-width: 4;
+    -fx-border-color: chartreuse;
+}

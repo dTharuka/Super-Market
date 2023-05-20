@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="413.0" prefWidth="569.0" style="-fx-background-color: #ffffff;" styleClass="AnchorPane" stylesheets="@../Use.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewItemFormController">
+   <children>
+      <Label layoutX="206.0" layoutY="14.0" prefHeight="38.0" prefWidth="170.0" text="Add New Item ">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtItemCode" layoutX="133.0" layoutY="68.0" onKeyReleased="#itemTextFeaildChecker" prefHeight="38.0" prefWidth="286.0" promptText="Item Code" stylesheets="@../Use.css">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Separator layoutX="176.0" layoutY="51.0" prefWidth="200.0" />
+      <TextField fx:id="txtDescription" layoutX="133.0" layoutY="119.0" onKeyReleased="#itemTextFeaildChecker" prefHeight="38.0" prefWidth="286.0" promptText="Description" stylesheets="@../Use.css">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPackSize" layoutX="133.0" layoutY="169.0" onKeyReleased="#itemTextFeaildChecker" prefHeight="38.0" prefWidth="286.0" promptText="Pack Size" stylesheets="@../Use.css">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtUnitPrice" layoutX="133.0" layoutY="219.0" onKeyReleased="#itemTextFeaildChecker" prefHeight="38.0" prefWidth="286.0" promptText="Unit Price" stylesheets="@../Use.css">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtQuantityOnHand" layoutX="133.0" layoutY="266.0" onKeyReleased="#itemTextFeaildChecker" prefHeight="38.0" prefWidth="286.0" promptText="Quantity On Hand" stylesheets="@../Use.css">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnAddItem" layoutX="441.0" layoutY="361.0" mnemonicParsing="false" onAction="#AddNewItemOnAction" prefHeight="38.0" prefWidth="114.0" style="-fx-background-color: #7bed9f;" stylesheets="@../Use.css" text="Add Item" textFill="#070707">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnCancel" layoutX="319.0" layoutY="361.0" mnemonicParsing="false" onAction="#BackOnAction" prefHeight="38.0" prefWidth="114.0" style="-fx-background-color: #ff3838;" stylesheets="@../Use.css" text="Back" textFill="#030303">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="txtDiscount" layoutX="133.0" layoutY="315.0" onKeyReleased="#itemTextFeaildChecker" prefHeight="38.0" prefWidth="286.0" promptText="Discount" stylesheets="@../Use.css">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
